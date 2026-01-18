@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Reset messages area
         messages.innerHTML = `
             <div class="message bot">
-                <div class="avatar">🤖</div>
+                <div class="avatar">AI</div>
                 <div class="bubble">
-                    Hello 👋 <br>How can I help you today?
+                    Hello!<br>How can I help you today?
                 </div>
             </div>
         `;
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formattedText = formatCodeBlocks(text);
         
         div.innerHTML = `
-            <div class="avatar">🤖</div>
+            <div class="avatar">AI</div>
             <div class="bubble">${formattedText}</div>
         `;
         messages.appendChild(div);
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const div = document.createElement("div");
         div.className = "message bot";
         div.innerHTML = `
-            <div class="avatar">🤖</div>
+            <div class="avatar">AI</div>
             <div class="bubble">Typing...</div>
         `;
         messages.appendChild(div);
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             chatItem.innerHTML = `
                 <span class="chat-title">${escapeHTML(chat.name)}</span>
-                <span class="delete-chat" data-chat-id="${chat.id}">🗑️</span>
+                <span class="delete-chat" data-chat-id="${chat.id}">×</span>
             `;
 
             // Click to load chat
@@ -289,8 +289,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Add welcome message
         messages.innerHTML = `
             <div class="message bot">
-                <div class="avatar">🤖</div>
-                <div class="bubble">Hello 👋 <br>How can I help you today?</div>
+                <div class="avatar">AI</div>
+                <div class="bubble">Hello!<br>How can I help you today?</div>
             </div>
         `;
 
