@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            Adnan's AI
+        </div>
+
+        <button class="new-chat">
+            + New Chat
+        </button>
+
+        <!-- Chat History -->
+        <div class="chat-history" id="chatHistory">
+            <!-- Chat items will be dynamically loaded here -->
+        </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-area">
+
+        <!-- Header -->
+        <header class="chat-header">
+            <span>Smart AI Assistant</span>
+        </header>
+
+        <!-- Messages -->
+        <section class="messages">
+
+            <div class="message bot">
+                <div class="avatar">AI:</div>
+                <div class="bubble">
+                    Hello  <br>
+                    How can I help you today?
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Input Box -->
+        <footer class="input-area">
+            <input type="text" placeholder="Message AI Assistant...">
+            <button>➤</button>
+        </footer>
+
+    </main>
+
+</div>
+
+<!-- JS MUST be before closing body -->
+<script src="{% static 'js/chat.js' %}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+</body>
+</body>
+</html>
