@@ -1,4 +1,4 @@
-📘 README.md — AI Assistant (Django + Gemini)
+
 # 🤖 AI Assistant – Full Stack ChatGPT-Style Application
 
 A full-stack AI Assistant web application built using **Django**, **Django REST Framework**, **MySQL**, and **Google Gemini API**, featuring a **ChatGPT/Gemini-style professional UI**, real-time chat, chat history, syntax-highlighted code responses, and robust error handling.
@@ -80,7 +80,7 @@ ai-assistant-django/
 git clone https://github.com/adnanfarooqui01/ai-assistant-django.git
 cd ai-assistant-django
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
